@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="Vendor\CustomAttribute\Console\Command\UpdateCustomAttribute" xsi:type="object">Vendor\CustomAttribute\Console\Command\UpdateCustomAttribute</item>
+                <item name="Vendor\CustomAttribute\Console\Command\EnableFeatureToggleCommand" xsi:type="object">Vendor\CustomAttribute\Console\Command\EnableFeatureToggleCommand</item>
+                <item name="Vendor\CustomAttribute\Console\Command\DisableFeatureToggleCommand" xsi:type="object">Vendor\CustomAttribute\Console\Command\DisableFeatureToggleCommand</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

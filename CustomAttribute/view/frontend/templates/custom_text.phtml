@@ -1,0 +1,15 @@
+<?php 
+$viewModel = $block->getData('viewModel');
+$specialAttributeValue = $viewModel->getSpecialAttributeValue();
+?>
+
+<?php if ($specialAttributeValue !== null): ?>
+    <div class="custom-attribute-text">
+        <p><?php echo $block->escapeHtml(__('This THE a special attribute: ')); ?></p>
+        <input type="text" id="special_attribute_input" value="<?php echo $block->escapeHtml($specialAttributeValue); ?>" />
+    </div>
+<?php endif; ?>
+
+<script type="text/javascript">
+    require(['Vendor_CustomAttribute/js/custom-attribute-validation']);
+</script>

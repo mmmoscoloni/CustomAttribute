@@ -1,0 +1,22 @@
+{
+    "name": "vendor/module-customattribute",
+    "description": "This module allows for the addition of new custom attributes specifically for products within Magento. ",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Maria Florencia Moscoloni",
+            "email": "mariafmoscoloni@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Vendor\\CustomAttribute\\": ""
+        }
+    }
+}
